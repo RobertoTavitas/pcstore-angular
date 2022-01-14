@@ -1,0 +1,21 @@
+.pcBox {
+    padding: 10px 10px;
+}
+
+.pcBox img {
+    width: 100%;
+    height: 400px;
+    /* object-fit: cover; */
+    border-radius: 5px;
+}
+
+.pcBox h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+a i {
+    font-size: 20px;
+    padding: 0 5px;
+}
