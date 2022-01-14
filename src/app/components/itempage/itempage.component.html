@@ -1,0 +1,33 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-5 imagen" *ngIf="itemData">
+            <a routerLink="../../menu" class="btn-mine">Back</a> 
+            <img src="{{itemData[0].image}}" alt="" class="mt-3">
+            
+        </div>
+        <div class="col-lg-4 data">
+            <h2 class="mt-1">{{itemData[0].name}}</h2>
+            <p id="description">{{itemData[0].description}}</p>
+            <p>{{itemData[0].price | currency: '$ '}}</p>
+        </div>
+        <div class="col-lg-3" id="formulario">
+            <h2 class="mb-3 mt-1">Enter your details</h2>
+            <form action="">
+                <input type="text" id="name" class="form-control" placeholder="Enter your full name">
+                <input type="text" id="phone" class="form-control" placeholder="phone" >
+                <input type="text" id="adress1" class="form-control" placeholder="Adress line 1">
+                <input type="text" id="adress2" class="form-control" placeholder="Adress line 2">
+                <input type="number" id="cp" class="form-control" placeholder="Postal Code">
+                <input type="text" id="city" class="form-control" placeholder="City">
+                <input type="text" id="country" class="form-control" placeholder="Country">
+                <br><br>
+                <h2 class="mb-3">Credit card info</h2>
+                <input type="text" id="card-number" class="form-control" placeholder="credit card number">
+                <input type="text" id="card-name" class="form-control" placeholder="credit card name">
+                <input type="date" id="card-date" class="form-control" placeholder="credit card date">
+                <input type="number" id="card-code" class="form-control" placeholder="ccv">
+                <button class="btn-mine comprar" onclick="alert('Tanks for trying this pc store demo!')">Buy</button>
+            </form>
+        </div>
+    </div>
+</div>

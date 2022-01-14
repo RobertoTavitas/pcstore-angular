@@ -1,0 +1,53 @@
+img {
+    width: 100%;
+    min-height: 800;
+    max-height: 600px;
+    border-radius: 5px;
+    
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+input#name, #phone {
+    width: 100%;
+}
+
+input#cp, #city, #country, #card-date, #card-code {
+    width: 45%;
+}
+
+.imagen {
+    margin-left: -180px;
+    margin-right: 90px;
+}
+
+.data {
+    margin-right: 90px;
+}
+
+#description {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+
+.comprar {
+    float: right;
+    margin-top: 50px;
+    border: none;
+}
+
+@media screen and (max-width:380px) {
+    img {
+        width: 50%;
+    }
+    .imagen {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
