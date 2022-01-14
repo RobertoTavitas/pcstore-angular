@@ -3,6 +3,29 @@
     margin: 0;
 }
 
+:root {
+    --primary-color: #13ADC7;
+    --secondary-color: #1b2844;
+}
+
 body {
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.btn-mine {
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.btn-mine:hover{
+    background: rgb(19, 173, 199);
+    color: #fff;
 }
