@@ -1,0 +1,151 @@
+
+.banner {
+    background-image: url(../../../assets/images/gaming3.jpg);
+    height: 900px;
+    background-position: center top;
+    /* background-size: contain; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content {
+    top: 40%;
+    left: 32em;
+    position: absolute;
+    width: 45%;
+}
+
+.content a {
+    font-size: 22px;
+    float: right;
+    border: 1px solid white;
+}
+
+.content a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+.container-title {
+    font-style: italic;
+    margin-bottom: 45px;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.stepBox {
+    background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.stepBox h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.stepBox p {
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+}
+
+.pcBox {
+    padding: 10px 5px;
+}
+
+.pcBox img {
+    width: 100%;
+    height: 330px;
+    /* object-fit: cover; */
+    border-radius: 5px;
+}
+
+.pcBox h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.viewMoreBtn {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    float: right;
+    margin-bottom: 30px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+
+
+/* Responsive size ipad */
+@media screen and (max-width:815px) {
+    .content {
+        width: 50%;
+        left: 190px;
+        top: 38%;
+    }
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .content a {
+        font-size: 20px;
+    }
+    
+    .pcBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pcBox img {
+        width: 50%;
+        border-radius: 5px;
+    }
+}
+
+/* Responsive size iphone */
+@media screen and (max-width:380px) {
+    .content {
+        width: 45%;
+        left: 99px;
+        top: 46%;
+    }
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content a {
+        font-size: 15px;
+        align-items: center;
+        padding: 5px 5px;
+    }
+    
+    .pcBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pcBox img {
+        width: 50%;
+        border-radius: 5px;
+    }
+}
